@@ -1,9 +1,21 @@
 <?php
-    $system_install = true;
-    $system_logged = true;
-    $system_version = "1.0.0";
 
-    include("app/system/v".$system_version."/php/modules/style-color.php");
+$system_install = true;
+$system_logged = true;
+$system_version = "1.0.0";
+    
+if($system_install == true){
+    if($system_logged == true){
+        $painel_show = true;              
+    }else{
+        header ("location: login");
+    }      
+}else{
+    header ("location: install");
+}
+
+include("app/system/v".$system_version."/php/modules/style-color.php");
+
 ?>
 <!DOCTYPE html>
 <html>
@@ -14,26 +26,12 @@
     <link rel="sortcut icon" href="<?php echo "app/system/v".$system_version."/images/icon-radius.png"; ?>" type="image/x-icon" />
 </head>
 <body style="background: <?php echo $theme_color_body; ?>;">
+    <?php 
 
-	<?php
-        
-        if($system_install == true){
-
-        	if($system_logged == true){
-
-               include("app/system/v".$system_version."/admin-painel.php");
-               
-        	}else{
-        		//login
-        	}
-       
-        }else{
-
-        	//instalar
-
+        if($painel_show == true){
+            include("app/system/v".$system_version."/admin-painel.php"); 
         }
 
-	?>
-
+    ?>
 </body>
 </html>
