@@ -1,117 +1,55 @@
 body{
     font-family: 'Roboto', sans-serif;
-    background: #dedede;
 }
 
-.login{
-    border-radius: 3px;
-    position: absolute;
-    transform: translate(-50%,-50%);
-    left: 50%;
-    top: 50%;
-    z-index: 100;
-    background: #fff;
-    width: 350px;
-    -webkit-box-shadow: 0px 0px 5px 1px rgba(60,60,93,0.1);
-    -moz-box-shadow: 0px 0px 5px 1px rgba(60,60,93,0.1);
-    box-shadow: 0px 0px 5px 1px rgba(60,60,93,0.1);
-    border: 3px solid #dedede;
+@media only screen and (min-width: 250px) and (max-width: 600px){
+
+    body{ background: #fff; }
+    .login{ border-radius: 3px; position: absolute; transform: translate(-50%,-50%); left: 50%; top: 50%; z-index: 100; background: #fff; width: 90%; }
+    .login-context{ padding: 40px 20px; }
+    .login-title{ font-size: 20px; text-align: center; font-weight: bold; margin-bottom: 3px; color: #7499aa; }
+    .login-description{ font-size: 14px; text-align: center; margin-bottom: 20px; color: #a2a2c3; } 
+    .login-label{ margin-bottom: 5px; color: #999; font-size: 14px; margin-left: 5px; } 
+    .login-input{ padding: 10px 10px; background: #f2f2f2; border: 1px solid #e6eff3; border-bottom: 1px solid #e6eff3; width: 93%; margin-bottom: 15px; box-shadow: 0 0 0 0; outline: 0; border-radius: 3px; } 
+    .login-input:focus{ border-bottom: 1px solid #5e7e8c; } 
+    .loginbutton{ margin-top: 35px; display: block; margin-left: auto; margin-right: auto; padding: 15px 35px; cursor: pointer; box-shadow: 0 0 0 0; border: 0 none; outline: 0; background: #0099ff; color: #ffffff; font-size: 16px; border-radius: 3px; -webkit-touch-callout: none; -webkit-user-select: none; -khtml-user-select: none; -moz-user-select: none; -ms-user-select: none; user-select: none; } 
+    .login-info-group{ display: grid; grid-template-columns: 20px auto; } 
+    .login-remember{ font-size: 14px; display: inline-block; margin-top: 1px; color: #555; -webkit-touch-callout: none; -webkit-user-select: none; -khtml-user-select: none; -moz-user-select: none; -ms-user-select: none; user-select: none; margin-left: 4px; } 
+    .login-image-icon{ width: 85px; border-radius: 100%; position: relative; transform: translateX(-50%); left: 50%; margin-bottom: 4px; -webkit-touch-callout: none; -webkit-user-select: none; -khtml-user-select: none; -moz-user-select: none; -ms-user-select: none; user-select: none; }
+
 }
 
-.login-context{
-    padding: 40px 20px;
+@media only screen and (min-width: 601px) and (max-width: 900px){
+
+    body{ background: #dedede; }
+    .login{ border-radius: 3px; position: absolute; transform: translate(-50%,-50%); left: 50%; top: 50%; z-index: 100; background: #fff; width: 350px; -webkit-box-shadow: 0px 0px 5px 1px rgba(60,60,93,0.1); -moz-box-shadow: 0px 0px 5px 1px rgba(60,60,93,0.1); box-shadow: 0px 0px 5px 1px rgba(60,60,93,0.1); border: 3px solid #dedede; }
+    .login-context{ padding: 40px 20px; }
+    .login-title{ font-size: 20px; text-align: center; font-weight: bold; margin-bottom: 3px; color: #7499aa; }
+    .login-description{ font-size: 14px; text-align: center; margin-bottom: 20px; color: #a2a2c3; } 
+    .login-label{ margin-bottom: 5px; color: #999; font-size: 14px; margin-left: 5px; } 
+    .login-input{ padding: 10px 10px; background: #f2f2f2; border: 1px solid #e6eff3; border-bottom: 1px solid #e6eff3; width: 93%; margin-bottom: 15px; box-shadow: 0 0 0 0; outline: 0; border-radius: 3px; } 
+    .login-input:focus{ border-bottom: 1px solid #5e7e8c; } 
+    .loginbutton{ margin-top: 35px; display: block; margin-left: auto; margin-right: auto; padding: 15px 35px; cursor: pointer; box-shadow: 0 0 0 0; border: 0 none; outline: 0; background: #0099ff; color: #ffffff; font-size: 16px; border-radius: 3px; -webkit-touch-callout: none; -webkit-user-select: none; -khtml-user-select: none; -moz-user-select: none; -ms-user-select: none; user-select: none; } 
+    .login-info-group{ display: grid; grid-template-columns: 20px auto; } 
+    .login-remember{ font-size: 14px; display: inline-block; margin-top: 1px; color: #555; -webkit-touch-callout: none; -webkit-user-select: none; -khtml-user-select: none; -moz-user-select: none; -ms-user-select: none; user-select: none; margin-left: 4px; } 
+    .login-image-icon{ width: 55px; border-radius: 100%; position: relative; transform: translateX(-50%); left: 50%; margin-bottom: 4px; -webkit-touch-callout: none; -webkit-user-select: none; -khtml-user-select: none; -moz-user-select: none; -ms-user-select: none; user-select: none; }
+
 }
 
-.login-title{
-    font-size: 20px;
-    text-align: center;
-    font-weight: bold;
-    margin-bottom: 3px;
-    color: #7499aa;
+@media only screen and (min-width: 901px){
+
+    body{ background: #dedede; }
+    .login{ border-radius: 3px; position: absolute; transform: translate(-50%,-50%); left: 50%; top: 50%; z-index: 100; background: #fff; width: 350px; -webkit-box-shadow: 0px 0px 5px 1px rgba(60,60,93,0.1); -moz-box-shadow: 0px 0px 5px 1px rgba(60,60,93,0.1); box-shadow: 0px 0px 5px 1px rgba(60,60,93,0.1); border: 6px solid #dedede; }
+    .login-context{ padding: 40px 20px; }
+    .login-title{ font-size: 20px; text-align: center; font-weight: bold; margin-bottom: 3px; color: #7499aa; }
+    .login-description{ font-size: 14px; text-align: center; margin-bottom: 20px; color: #a2a2c3; } 
+    .login-label{ margin-bottom: 5px; color: #999; font-size: 14px; margin-left: 5px; } 
+    .login-input{ padding: 10px 10px; background: #f2f2f2; border: 1px solid #e6eff3; border-bottom: 1px solid #e6eff3; width: 93%; margin-bottom: 15px; box-shadow: 0 0 0 0; outline: 0; border-radius: 3px; } 
+    .login-input:focus{ border-bottom: 1px solid #5e7e8c; } 
+    .loginbutton{ margin-top: 35px; display: block; margin-left: auto; margin-right: auto; padding: 15px 35px; cursor: pointer; box-shadow: 0 0 0 0; border: 0 none; outline: 0; background: #0099ff; color: #ffffff; font-size: 16px; border-radius: 3px; -webkit-touch-callout: none; -webkit-user-select: none; -khtml-user-select: none; -moz-user-select: none; -ms-user-select: none; user-select: none; } 
+    .login-info-group{ display: grid; grid-template-columns: 20px auto; } 
+    .login-remember{ font-size: 14px; display: inline-block; margin-top: 1px; color: #555; -webkit-touch-callout: none; -webkit-user-select: none; -khtml-user-select: none; -moz-user-select: none; -ms-user-select: none; user-select: none; margin-left: 4px; } 
+    .login-image-icon{ width: 55px; border-radius: 100%; position: relative; transform: translateX(-50%); left: 50%; margin-bottom: 4px; -webkit-touch-callout: none; -webkit-user-select: none; -khtml-user-select: none; -moz-user-select: none; -ms-user-select: none; user-select: none; }
+
 }
 
-.login-description{
-    font-size: 14px;
-    text-align: center;
-    margin-bottom: 20px;
-    color: #a2a2c3;
-}
-
-.login-label{
-    margin-bottom: 5px;
-    color: #999;
-    font-size: 14px;
-    margin-left: 5px;
-}
-
-.login-input{
-    padding: 10px 10px;
-    background: #f2f2f2;
-    border: 1px solid #e6eff3;
-    border-bottom: 1px solid #e6eff3;
-    width: 93%;
-    margin-bottom: 15px;
-    box-shadow: 0 0 0 0;
-    outline: 0;
-    border-radius: 3px;
-}
-
-.login-input:focus{
-    border-bottom: 1px solid #5e7e8c;
-}
-
-.loginbutton{
-    margin-top: 35px;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    padding: 15px 35px;
-    cursor: pointer;
-    box-shadow: 0 0 0 0;
-    border: 0 none;
-    outline: 0;
-    background: #0099ff;
-    color: #ffffff;
-    font-size: 16px;
-    border-radius: 3px;
-    -webkit-touch-callout: none;
-    -webkit-user-select: none;
-    -khtml-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
-}
-
-.login-info-group{
-    display: grid;
-    grid-template-columns: 20px auto;
-}
-
-.login-remember{
-    font-size: 14px;
-    display: inline-block;
-    margin-top: 1px;
-    color: #555;
-    -webkit-touch-callout: none;
-    -webkit-user-select: none;
-    -khtml-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
-    margin-left: 4px;
-}
-
-.login-image-icon{
-    width: 55px;
-    border-radius: 100%;
-    position: relative;
-    transform: translateX(-50%);
-    left: 50%;
-    margin-bottom: 4px;
-    -webkit-touch-callout: none;
-    -webkit-user-select: none;
-    -khtml-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
-}
