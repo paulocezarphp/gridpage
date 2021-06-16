@@ -14,6 +14,26 @@ class GPgrids{
 		
 	}
 
+	public function get_grids_list(){
+
+	} 
+
+	public function activate_grids_list(){
+
+	} 
+
+	public function disable_grids_list(){
+
+	}
+
+	public function install_grids_list(){
+
+	}
+
+	public function delete_grids_list(){
+
+	}
+
 }
 
 ?>

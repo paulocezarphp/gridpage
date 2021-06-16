@@ -2,66 +2,54 @@
 
 class GPsystem{
 
-	public function get_modules_list(){
+	public function system_install(){
     
-	} 
+	}
 
-	public function activate_modules_list(){
+	public function system_reboot(){
+		
+	}
 
-	} 
-
-	public function disable_modules_list(){
+	public function system_start(){
 
 	}
 
-	public function install_modules_list(){
+	public function system_end(){
 
 	}
 
-	public function delete_modules_list(){
+	public function system_header(){
 
 	}
 
-	public function get_themes_list(){
+	public function system_body_start(){
+       
+	}
+
+	public function system_body_end(){
+       
+	}
+    
+
+    public function system_admin_start(){
 
 	}
 
-	public function activate_themes_list(){
-
-	} 
-
-	public function disable_themes_list(){
+	public function system_admin_end(){
 
 	}
 
-	public function install_themes_list(){
+	public function system_admin_header(){
 
 	}
 
-	public function delete_themes_list(){
-
-	} 
-
-	public function get_grids_list(){
-
-	} 
-
-	public function activate_grids_list(){
-
-	} 
-
-	public function disable_grids_list(){
-
+	public function system_admin_body_start(){
+       
 	}
 
-	public function install_grids_list(){
-
+	public function system_admin_body_end(){
+       
 	}
-
-	public function delete_grids_list(){
-
-	}
-
 
 
 }
