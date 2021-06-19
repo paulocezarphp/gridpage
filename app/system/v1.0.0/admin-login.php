@@ -6,10 +6,10 @@
 			<div class="login-description">Access your account</div>
 			<div class="login-label">Login</div>
 			<input type="text" name="login" class="login-input" 
-			autocomplete="off" placeholder="Digite seu login">
+			autocomplete="off" placeholder="Enter your login">
 			<div class="login-label">Password</div>
 			<input type="password" name="password" class="login-input" 
-			autocomplete="off" placeholder="Digite sua senhaa">
+			autocomplete="off" placeholder="Type your password">
 
 			<div class="login-info-group">
 				<input type="checkbox" name="">
@@ -17,7 +17,7 @@
 			</div>
 
 			<button type="submit" class="loginbutton">Log In</button>
-			<input type="hidden" name="operacao" value="login">
+
 		</div>
 	</form>
 </div>
