@@ -28,5 +28,6 @@ if($system_install == false){
         }
 
     ?>
+    <script type="text/javascript" src="<?php echo "app/system/v".$system_version."/js/system_install.js"; ?>"></script>
 </body>
 </html>

@@ -51,13 +51,13 @@
 					autocomplete="off" placeholder="">
                     
 					<div class="install-info-group">
-						<input type="checkbox" name="" checked="">
-						<div class="install-remember">Visible to search engines</div>
+						<input type="checkbox" name="" checked="" id="checkbox-visible-search">
+						<div class="install-remember" id="checkbox-visible-search-text">Visible to search engines</div>
 					</div>
                     
 					<div class="install-info-group">
-						<input type="checkbox" name="">
-						<div class="install-remember">I have read and accepted the terms and conditions of use of the system</div>
+						<input type="checkbox" name="" id="checkbox-visible-terms">
+						<div class="install-remember" id="checkbox-visible-terms-text">I have read and <a href="terms.php" target="_blank" class="install-terms">accepted the terms</a> and conditions of use of the system</div>
 					</div>
 
 				</div>
