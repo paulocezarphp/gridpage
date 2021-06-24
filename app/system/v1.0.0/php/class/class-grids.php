@@ -2,7 +2,7 @@
 
 class GPgrids{	
 
-	public function create_grid($name,$type_publication,$data){
+	public function create_grid($name, $type_publication, $data){
 
 	}
 
