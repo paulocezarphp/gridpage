@@ -2,7 +2,6 @@
 
 $system_install = true;
 $system_logged = true;
-$system_version = "1.0.0";
     
 if($system_install == true){
     if($system_logged == true){
@@ -14,7 +13,13 @@ if($system_install == true){
     header ("location: install");
 }
 
+$system_version = "1.0.0";
+
+include("app/system/v".$system_version."/php/class/class-gridpage.php");
 include("app/system/v".$system_version."/php/modules/style-color.php");
+
+$Gridpage = new GPgridpage();
+$Gridpage->gridpage_init();
 
 ?>
 <!DOCTYPE html>

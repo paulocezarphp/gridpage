@@ -14,9 +14,9 @@ class GPutilities{
    		
    	}
 
-   	public function validate_password_user(){
-   		
-   	}
+      public function url_directory(){
+         
+      }
 
 }
 
