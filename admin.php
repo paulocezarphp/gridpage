@@ -15,11 +15,8 @@ if($system_install == true){
 
 $system_version = "1.0.0";
 
-include("app/system/v".$system_version."/php/class/class-gridpage.php");
 include("app/system/v".$system_version."/php/modules/style-color.php");
-
-$Gridpage = new GPgridpage();
-$Gridpage->gridpage_init();
+include("app/system/v".$system_version."/php/modules/start-class.php");
 
 ?>
 <!DOCTYPE html>
@@ -36,6 +33,8 @@ $Gridpage->gridpage_init();
         if($painel_show == true){
             include("app/system/v".$system_version."/admin-painel.php"); 
         }
+
+        $Log->add_register("ok_system_install");
 
     ?>
 </body>
