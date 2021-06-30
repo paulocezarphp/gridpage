@@ -1,13 +1,23 @@
 .painel{
-    
+	display: grid;
+	grid-template-columns: 250px auto;
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	height: 100%;
+    width: 100%;
 }
 
 .painel-left{
-
+    background: #444;
+    height: 100%;
+    width: 100%;
 }
 
 .painel-right{
-
+    background: #fff;
+    height: 100%;
+    width: 100%;
 }
 
 .painel-item-menu{ 
@@ -40,4 +50,32 @@
 
 .painel-page-boxinfo{
 
+}
+
+.painel-menu{
+	position: fixed;
+	top: 0px;
+	left: 0px;
+	width: 100%;
+	background: #333;
+	z-index: 100;
+}
+
+.painel-item{
+	padding: 10px;
+	color: #fff;
+	display: grid;
+	grid-template-columns: 40px auto;
+}
+
+.painel-item-icon{
+	width: 32px;
+}
+
+.painel-item-text{
+	position: relative;
+    transform: translateY(-50%);
+    top: 50%;
+    font-size: 18px;
+    font-weight: bold;
 }

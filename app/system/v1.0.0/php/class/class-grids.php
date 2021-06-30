@@ -1,6 +1,10 @@
 <?php
 
 class GPgrids{	
+    
+    public function import_grid(){
+    	
+    }
 
 	public function create_grid($name, $type_publication, $data){
 
@@ -18,19 +22,19 @@ class GPgrids{
 
 	} 
 
-	public function activate_grids_list(){
+	public function activate_grid_list(){
 
 	} 
 
-	public function disable_grids_list(){
+	public function disable_grid_list(){
 
 	}
 
-	public function install_grids_list(){
+	public function install_grid_list(){
 
 	}
 
-	public function delete_grids_list(){
+	public function delete_grid_list(){
 
 	}
 
