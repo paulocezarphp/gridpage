@@ -27,8 +27,9 @@ include("app/system/v".$system_version."/php/modules/start-class.php");
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <link rel="sortcut icon" href="<?php echo "app/system/v".$system_version."/images/icon-radius.png"; ?>" type="image/x-icon" />
     <link rel="stylesheet" type="text/css" href="<?php echo "app/system/v".$system_version."/css/style-admin-desktop.css"; ?>" />
+    <link rel="stylesheet" type="text/css" href="<?php echo "app/system/v".$system_version."/css/style-admin.css"; ?>" />
 </head>
-<body style="background: <?php echo $theme_color_body; ?>;">
+<body>
     <?php 
 
         if($painel_show == true){
