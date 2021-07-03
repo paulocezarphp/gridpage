@@ -395,35 +395,6 @@
 
                 <h1>Title Page</h1>
 
-
-                <div class="box color-border-danger" style="background:<?php echo $theme_color_box;?>;" >
-                	<div class="box-title color-danger">Problem</div>
-                	<div class="box-body">
-                		It looks like there are some issues within the page.
-                    </div>
-                </div><br>
-
-                <div class="box color-border-info" style="background:<?php echo $theme_color_box;?>;" >
-                	<div class="box-title color-info">Information</div>
-                	<div class="box-body">
-                		It looks like there are some issues within the page.
-                    </div>
-                </div><br>
-
-                <div class="box color-border-success" style="background:<?php echo $theme_color_box;?>;" >
-                	<div class="box-title color-success">Completed</div>
-                	<div class="box-body">
-                		It looks like there are some issues within the page.
-                    </div>
-                </div><br>
-
-                <div class="box color-border-warning" style="background:<?php echo $theme_color_box;?>;" >
-                	<div class="box-title color-warning">Warning</div>
-                	<div class="box-body">
-                		It looks like there are some issues within the page.
-                    </div>
-                </div><br>
-
 				<p>
 					Lorem ipsum in magna rhoncus volutpat dolor, facilisis habitasse porta leo volutpat etiam bibendum, viverra ad a tempor ultrices. 
 					imperdiet massa consectetur adipiscing lorem curabitur tortor sollicitudin, quisque pellentesque ad phasellus sociosqu dui rutrum, curabitur dapibus ornare enim elit est dictumst, consequat auctor facilisis amet erat proin. 
