@@ -14,6 +14,8 @@ include("app/system/v".$system_version."/php/class/class-translator.php");
 include("app/system/v".$system_version."/php/class/class-utilities.php");
 include("app/system/v".$system_version."/php/class/class-widgets.php");
 include("app/system/v".$system_version."/php/class/class-validate.php");
+include("app/system/v".$system_version."/php/class/class-view.php");
+
 
 $System = new GPsystem();
 $Cryptography = new GPcryptography();
@@ -29,5 +31,6 @@ $Translator = new GPtranslate();
 $Utilities = new GPutilities();
 $Widgets = new GPwidgets();
 $Validate = new GPvalidate();
+$View = new GPview();
 
 ?>

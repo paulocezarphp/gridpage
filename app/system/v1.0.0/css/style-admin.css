@@ -1,19 +1,39 @@
 body{
-    font-family: sans-serif;
+	font-family: sans-serif;
 }
 
 .color-danger{
-
+	background: #ff4d4d;
+	color: #fff;
 }
 
 .color-success{
-
+    background: #72ba37;
+	color: #fff;
 }
 
 .color-warning{
-
+    background: #ffb040;
+	color: #fff;
 }
 
 .color-info{
+    background: #4d97ff;
+	color: #fff;
+}
 
+.color-border-danger{
+	border: 1px solid #ff4d4d;
+}
+
+.color-border-success{
+    border: 1px solid #72ba37;
+}
+
+.color-border-warning{
+    border: 1px solid #ffb040;
+}
+
+.color-border-info{
+    border: 1px solid #4d97ff;
 }
