@@ -6,6 +6,10 @@ class GPgrids{
     	
     }
 
+    public function export_grid(){
+    	
+    }
+
 	public function create_grid($name, $type_publication, $data){
 
 	}

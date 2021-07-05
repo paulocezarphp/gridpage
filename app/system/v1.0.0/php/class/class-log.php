@@ -2,7 +2,7 @@
 
 class GPlog{
 	
-	public function add_register($type){
+	public function add_register($type, $aplication_name){
 
 		$input_log = $type;
 

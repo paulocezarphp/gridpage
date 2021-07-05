@@ -5,6 +5,10 @@ class GPmodules{
 	public function import_modules(){
     
 	} 
+
+	public function export_modules(){
+    
+	} 
 	
 	public function get_modules_list(){
     

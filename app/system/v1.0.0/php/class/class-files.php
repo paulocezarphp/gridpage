@@ -10,11 +10,15 @@ class GPfile{
 
 	}
 
-	public function rename_file(){
+	public function rename_file($file){
 
 	}
 
-	public function delete_file(){
+	public function delete_file($file){
+
+	}
+
+	public function create_file($name_file){
 
 	}
 

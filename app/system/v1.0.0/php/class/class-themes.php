@@ -5,6 +5,10 @@ class GPthemes{
 	public function import_theme(){
 
 	}
+
+	public function export_theme(){
+
+	}
 	
 	public function get_themes_list(){
 
