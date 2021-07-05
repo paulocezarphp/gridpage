@@ -13,7 +13,8 @@ if($system_install == true){
     header ("location: install");
 }
 
-$system_version = "1.0.0";
+//$system_version = "1.0.0";
+$GLOBALS['system_version'] = "1.0.0";
 
 include("app/system/v".$system_version."/php/modules/style-color.php");
 include("app/system/v".$system_version."/php/modules/start-class.php");
