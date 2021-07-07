@@ -5,24 +5,13 @@
 		<div class="painel-left" <?php echo "style='background:".$theme_color_background."; color:".$theme_color_background_text.";'"; ?>>
 
 			<?php 
-
-			$View->menu_item("plus-w", "Item menu A", "menu-item"); 
-			$View->sub_menu_item("Submenu A", "menu-item-sub1"); 
-			$View->sub_menu_item("Submenu B", "menu-item-sub1");
-			$View->sub_menu_item("Submenu C", "menu-item-sub1");
-			$View->sub_menu_item("Submenu D", "menu-item-sub1");
-
-			$View->menu_item("plus-w", "Item menu B", "menu-item"); 
-			$View->sub_menu_item("Submenu A", "menu-item-sub1"); 
-			$View->sub_menu_item("Submenu B", "menu-item-sub1");
-			$View->sub_menu_item("Submenu C", "menu-item-sub1");
-			$View->sub_menu_item("Submenu D", "menu-item-sub1");
-
-			$View->menu_item("plus-w", "Item menu C", "menu-item"); 
-			$View->sub_menu_item("Submenu A", "menu-item-sub1"); 
-			$View->sub_menu_item("Submenu B", "menu-item-sub1");
-			$View->sub_menu_item("Submenu C", "menu-item-sub1");
-			$View->sub_menu_item("Submenu D", "menu-item-sub1");
+			
+			$View->menu_stack_init();
+			$View->menu_stack_add(10, "Item menu A", "plus-w");
+			$View->menu_stack_add(30, "Item menu B", "plus-w");
+			$View->menu_stack_add(30, "Item menu C", "plus-w");
+			$View->menu_stack_add(20, "Item menu D", "plus-w");
+			$View->menu_stack_show($menu_stack_indice, $menu_stack_objects, $menu_stack_icon);
 
 			?>
 
