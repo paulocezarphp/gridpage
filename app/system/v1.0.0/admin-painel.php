@@ -7,11 +7,35 @@
 			<?php 
 			
 			$View->menu_stack_init();
-			$View->menu_stack_add(10, "Item menu A", "plus-w");
-			$View->menu_stack_add(30, "Item menu B", "plus-w");
-			$View->menu_stack_add(30, "Item menu C", "plus-w");
-			$View->menu_stack_add(20, "Item menu D", "plus-w");
-			$View->menu_stack_show($menu_stack_indice, $menu_stack_objects, $menu_stack_icon);
+
+			$View->menu_stack_add("menu-a", 10, "Item menu A", "plus-w");
+			$View->menu_stack_add("menu-b",44, "Item menu B", "plus-w");
+			$View->menu_stack_add("menu-c",30, "Item menu C", "plus-w");
+			$View->menu_stack_add("menu-d",20, "Item menu D", "plus-w");
+             
+            $View->sub_menu_stack_add("menu-a", 4, "(A) Sub menu item A");
+            $View->sub_menu_stack_add("menu-a", 2, "(A) Sub menu item B");
+            $View->sub_menu_stack_add("menu-a", 3, "(A) Sub menu item C");
+            $View->sub_menu_stack_add("menu-a", 1, "(A) Sub menu item D");
+
+            $View->sub_menu_stack_add("menu-b", 40, "(B) Sub menu item A");
+            $View->sub_menu_stack_add("menu-b", 20, "(B) Sub menu item B");
+            $View->sub_menu_stack_add("menu-b", 10, "(B) Sub menu item C");
+            $View->sub_menu_stack_add("menu-b", 30, "(B) Sub menu item D");
+            $View->sub_menu_stack_add("menu-b", 5, "(B) Sub menu item E");
+            $View->sub_menu_stack_add("menu-b", 2, "(B) Sub menu item F");
+            
+            $View->sub_menu_stack_add("menu-c", 40, "(C) Sub menu item A");
+            $View->sub_menu_stack_add("menu-c", 20, "(C) Sub menu item B");
+            $View->sub_menu_stack_add("menu-c", 10, "(C) Sub menu item C");
+            $View->sub_menu_stack_add("menu-c", 30, "(C) Sub menu item D");
+	            
+            $View->sub_menu_stack_add("menu-d", 40, "(D) Sub menu item A");
+            $View->sub_menu_stack_add("menu-d", 20, "(D) Sub menu item B");
+            $View->sub_menu_stack_add("menu-d", 10, "(D) Sub menu item C");
+            $View->sub_menu_stack_add("menu-d", 30, "(D) Sub menu item D");
+
+			$View->menu_stack_show();
 
 			?>
 

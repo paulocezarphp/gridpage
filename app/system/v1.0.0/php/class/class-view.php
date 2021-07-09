@@ -76,29 +76,70 @@ class GPview{
 		$GLOBALS['menu_stack_indice'] = array();
 		$GLOBALS['menu_stack_objects'] = array();
 		$GLOBALS['menu_stack_icon'] = array();
+		$GLOBALS['menu_stack_name'] = array();
+
+		$GLOBALS['sub_menu_stack_indice'] = array();
+		$GLOBALS['sub_menu_stack_objects'] = array();
+		$GLOBALS['sub_menu_stack_name'] = array();
 
 	}
 
-	public function menu_stack_add($indice, $objects, $icon){
+	public function menu_stack_add($name, $indice, $objects, $icon){
 
 		array_push($GLOBALS['menu_stack_indice'], $indice);
 		array_push($GLOBALS['menu_stack_objects'], $objects);
 		array_push($GLOBALS['menu_stack_icon'], $icon);
+		array_push($GLOBALS['menu_stack_name'], $name);
 
 	}
 
-	public function menu_stack_show($value, $objects, $icon){
+	public function sub_menu_stack_add($name, $indice, $objects){
 
-		array_multisort($value, $objects, $icon);
+		array_push($GLOBALS['sub_menu_stack_indice'], $indice);
+		array_push($GLOBALS['sub_menu_stack_objects'], $objects);
+		array_push($GLOBALS['sub_menu_stack_name'], $name);
+
+	}
+
+	public function menu_stack_show(){
+
+		$stack_sort = array_multisort(
+			$GLOBALS['menu_stack_indice'], 
+			$GLOBALS['menu_stack_objects'], 
+			$GLOBALS['menu_stack_icon'], 
+			$GLOBALS['menu_stack_name']
+		);
+
 		$count = 0;
-		$total = count($value);
+		$total = count($GLOBALS['menu_stack_indice']);
 
 		while ($count < $total) { 
 
-			$this->menu_item($icon[$count], $objects[$count], "");
+			$this->menu_item($GLOBALS['menu_stack_icon'][$count], $GLOBALS['menu_stack_objects'][$count], "");	
+            
+            $sub_count = 0;
+		    $sub_total = count($GLOBALS['sub_menu_stack_indice']);
+
+            $sub_stack_sort = array_multisort(
+			    $GLOBALS['sub_menu_stack_indice'], 
+			    $GLOBALS['sub_menu_stack_objects'], 
+			    $GLOBALS['sub_menu_stack_name']
+		    );
+
+			while ($sub_count < $sub_total) {
+
+				if($GLOBALS['sub_menu_stack_name'][$sub_count] == $GLOBALS['menu_stack_name'][$count]){
+
+					$this->sub_menu_item($GLOBALS['sub_menu_stack_objects'][$sub_count], "");
+
+				}
+
+				$sub_count++;
+
+			}
 
 			$count++;
-
+        
 		}
 
 	}
