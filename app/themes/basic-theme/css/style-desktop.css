@@ -1,0 +1,47 @@
+*{
+	padding: 0;
+	margin: 0;
+}
+
+h1{
+
+}
+
+h2{
+	
+}
+
+h3{
+	
+}
+
+h4{
+	
+}
+
+h5{
+	
+}
+
+h6{
+	
+}
+
+.position_center_x{ 
+	transform: translateX(-50%);
+	left: 50%;
+	position: relative;
+}
+
+.position_center_y{ 
+	transform: translateY(-50%);
+	top: 50%;
+	position: relative;
+}
+
+.position_center{ 
+	transform: translate(-50%, -50%);
+	top: 50%;
+	left: 50%;
+	position: relative;
+}
