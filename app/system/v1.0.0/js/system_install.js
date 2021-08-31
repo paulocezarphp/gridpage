@@ -5,7 +5,7 @@ checkbox-visible-terms
 checkbox-visible-terms-text
 */
 
-function Validate_Checkbox_Search(){
+function gp_validate_checkbox_search(){
 
 	var item_checkbox_search = document.getElementById("checkbox-visible-search").checked;
 
@@ -17,7 +17,7 @@ function Validate_Checkbox_Search(){
 
 }
 
-function Validate_Checkbox_Terms(){
+function gp_validate_checkbox_terms(){
 
 	var item_checkbox_terms = document.getElementById("checkbox-visible-terms").checked;
 
@@ -33,14 +33,14 @@ function Validate_Checkbox_Terms(){
 try {
    document.getElementById("checkbox-visible-search-text").addEventListener("click", Validate_Checkbox_Search);   
 }
-catch (e) {
+catch(e){
    console.log("Erro: non-existent item (checkbox-visible-search-text)");
 }
 
 try {
    document.getElementById("checkbox-visible-terms-text").addEventListener("click", Validate_Checkbox_Terms);
 }
-catch (e) {
+catch(e){
    console.log("Erro: non-existent item (checkbox-visible-terms-text)");
 }
 
