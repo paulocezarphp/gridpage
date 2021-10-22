@@ -14,6 +14,14 @@
 
     }
 
-    function validate_install{
+    function validate_install(){
     	
+    }
+
+    function validate_date(){
+
+    }
+
+      function validate_date_time(){
+        
     }

@@ -2,7 +2,7 @@
 
 class GPsystem{
 
-	public function system_install(){
+	public function system_install($site_name, $data_base, $host_name, $user_name, $password, $database_prefix, $key_cryptography, $admin_name, $admin_email, $admin_password ){
     
 	}
 
