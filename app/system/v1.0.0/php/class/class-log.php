@@ -22,22 +22,28 @@ class GPlog{
         		fwrite($file_log, $mensage);
 			break;
 			case 'ok_system_backup':
-        		# code...
+			    $mensage = "backup done successfully \n";
+        		fwrite($file_log, $mensage);
 			break;
 			case 'ok_system_reboot':
-        		# code...
+        		$mensage = "system successfully reboot \n";
+        		fwrite($file_log, $mensage);
 			break;
 			case 'error_login_access':
-        		# code...
+        		$mensage = "error when logging in \n";
+        		fwrite($file_log, $mensage);
 			break;
 			case 'ok_login_access':
-        		# code...
+        		$mensage = "login successfully \n";
+        		fwrite($file_log, $mensage);
 			break;
 			case 'ok_module_install':
-        		# code...
+        		$mensage = "module installed successfully \n";
+        		fwrite($file_log, $mensage);
 			break;
 			case 'erro_module_install':
-        		# code...
+			    $mensage = "error installing the module \n";
+			    fwrite($file_log, $mensage);
 			break;
 			case 'ok_module_activate':
         		# code...
